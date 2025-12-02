@@ -1,0 +1,63 @@
+/* Universal selector - * */
+*{
+    /*border: 1px solid black;*/
+}
+
+/* tag selector */
+h1{
+    background-color: aquamarine;
+}
+
+/* Id selector - # */
+#a{
+    color: white;
+    background-color: aqua;
+}
+
+/* class selector - . */
+.b{
+    border: 10px solid blueviolet;
+}
+
+/* Group selector - , */
+h1, h2{
+    text-align: center;
+    /* padding: 10px; -> applies for all sides*/
+    /*padding: 10px 20px; -> top+bottom then left+right*/
+    /*padding: 10px 20px 40px 80px; -> top, right, bottom, left -> clockwise assignment*/
+    margin: 20px;
+}
+
+/* Descendant selector */
+div p{
+    text-align: right;
+}
+
+/* Child selector - > */
+div > p{
+    color: green;
+    background-color: aqua;
+}
+
+/* Attribute selector */
+button[type="submit"]{
+    color: red;
+    font-size: 32px;
+}
+
+/* Pseudo class - : */
+li:nth-child(2){
+    color: mediumvioletred;
+    font-size: large;
+}
+
+li:nth-child(3):hover{
+    color: orange;
+    font-size: medium;
+}
+
+/* Pseudo elements - :: */
+#a::first-line{
+    font-size: 32px;
+    color: purple;
+}
