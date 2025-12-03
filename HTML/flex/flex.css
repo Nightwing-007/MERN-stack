@@ -1,15 +1,17 @@
 .flexContainer {
     border: 1px solid red;
     display: flex;
-
     height: 90vh;
-    gap: 10px;
-    align-items: center;
-
-    justify-content: center;
-    /*center, flex-start, flex-end, space-around, space-between, space-evenly*/
-    flex-direction: row;
-    /*row, reverse-row, column, reverse-column*/
+    /*gap: 10px;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    /*center, flex-start, flex-end, space-around, space-between, space-evenly, default - flex-start*/
+    /*flex-direction: row;*/
+    /*row, reverse-row, column, reverse-column, default - row*/
+    /*flex-wrap: wrap;*/
+    /*wrap, wrap-reverse, default - no wrap*/
+    /*align-content: space-evenly;*/
+    /*will only work when flex-wrap is used, values - same as that of justify-content, default - none*/
 }
 
 .flexItem{
@@ -19,4 +21,14 @@
     font-size: 24px;
     height: 60px;
     width: 80px;
+}
+
+.flexItem:nth-child(1){
+    order: 1;
+    align-self: center;
+}
+
+.flexItem:nth-child(6){
+    order: -1;
+    align-self: flex-end;
 }
