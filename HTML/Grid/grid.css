@@ -53,8 +53,6 @@ nav{
 
 main{
     grid-area: main;
-    background-color: yellow;
-    color: red;
     border: 1px solid black;
 }
 
@@ -82,5 +80,65 @@ body{
             "navbar main aside"
             "footer footer footer";
     grid-area: body;
+}
 
+.item:hover{
+    /*transform: translateY(-10px);*/
+    /*transform: translateX(-10px);*/
+    transform: translate3d(10px, 0, 0);
+}
+
+/*576px less than 576px for mobiles*/
+/*768px between 577px-768px tabs*/
+/*992px between 769px - 992px small screens*/
+/*1200px between 993px - 1200px normal screens*/
+/*1200px greater than 1200px for extra large screens*/
+
+@media (max-width: 576px)
+{
+    body{
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+                "header header header"
+                "navbar main aside"
+                "footer footer footer";
+    }
+    aside
+    {
+        display: none;
+    }
+    .item
+    {
+        font-size: 14px;
+        height: 50px;
+        width: 50px;
+    }
+    main
+    {
+        background-color: red;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    body{
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas:
+                "header header header"
+                "navbar main aside"
+                "footer footer footer";
+    }
+    nav
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px)
+{
+    body{
+        grid-template-areas:
+                "header header header"
+                "aside main navbar"
+                "footer footer footer";
+    }
 }

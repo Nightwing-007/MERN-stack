@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+        "header header"
+        "main aside" ;
+    background-color: black;
+    color: white;
+    display: grid;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header{
+    grid-area: header;
+    justify-self: flex-start;
+    width: 200%;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+.numb{
+    text-align: center;
+}
+.again{
+    margin: 10px;
+    font-size: 20px;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.between{
+    text-align: right;
+}
