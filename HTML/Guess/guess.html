@@ -7,25 +7,25 @@
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="grid1">
-            <header>
-                <h4 class="again">Again!</h4>
-                <h1 class="numb">Guess My Number!</h1>
-                <p class="between">(Between 1 and 20)</p>
-            </header>
-        </div>
-        <div class="grid2">
-            <main>
-                <input type="number" id="guess">
-                <button type="submit">Check!</button>
-            </main>
-        </div>
-        <div class="grid3">
-            <aside>
-                <h4>Start guessing...</h4>
-                <h4>💯Score: 20</h4>
-                <h4>🎖️HighScore: 0</h4>
-            </aside>
-        </div>
+        <header>
+            <h1>Guess My Number!</h1>
+            <p class="between">(Between 1 and 20)</p>
+            <button class="btn again">Again!</button>
+            <div class="number">?</div>
+        </header>
+        <main>
+            <section class="left">
+                <input type="number" class="guess" min="1" max="20"/>
+                <button class="btn check">Check!</button>
+            </section>
+            <section class="right">
+                <p class="message">Start guessing...</p>
+                <p class="label-score">💯 Score: <span class="score">20</span></p>
+                <p class="label-highscore">
+                    🥇 High Score: <span class="highscore">0</span>
+                </p>
+            </section>
+        </main>
+        <script src="guess.js"></script>
     </body>
 </html>
