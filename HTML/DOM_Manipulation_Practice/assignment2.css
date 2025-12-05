@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #cccccc;
+}
+.container{
+    padding: 50px;
+    margin: 200px;
+    background-color: white;
+    mso-border-shadow: yes;
+    border-radius: 15px;
+}
+
+h2{
+    text-align: center;
+    background-color: white;
+}
+
+#text{
+    background-color: white;
+}
+
+button{
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
